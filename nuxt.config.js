@@ -14,6 +14,7 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Playfair+Display:900' }
     ]
   },
+  // https://use.fontawesome.com/d6427b275f.js
   modules: [
     ['storyblok-nuxt', {
       accessToken: 'Z4ziIxTA9MkYUY0a3tneDQtt',
