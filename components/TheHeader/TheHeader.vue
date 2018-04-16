@@ -2,8 +2,10 @@
 <template>
   <header class="main-header">
     <nav class="main-nav">
-      <nuxt-link to="/"><a ><img class="logo" src="../../assets/logo.png" alt=""></a></nuxt-link>
-      <!-- <nuxt-link to="/"><a><i class="fa fa-bars fa-lg"></i></a></nuxt-link> -->
+      <nuxt-link to="/">
+        <a><img class="logo" src="../../assets/logo.png" alt=""></a>
+      </nuxt-link>
+      <!-- <nuxt-link to="/"><i class="icon fa fa-bars"></i></nuxt-link> -->
     </nav>
   </header>
 </template>
@@ -33,5 +35,11 @@ export default {
   width: 50px;
   height: auto;
   margin: 30px 0 20px 30px;
+}
+
+.icon {
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 2em;
 }
 </style>
