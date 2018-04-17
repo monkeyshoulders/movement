@@ -1,7 +1,9 @@
 <template>
   <div class="container">
     <section class="hero">
-      <img class="hero-img" src="../assets/profile.png" alt="">
+      <div class="hero-img-cont">
+        <img class="hero-img" src="../assets/profile.png" alt="">
+      </div>
       <div class="hero-text">
         <h1 class="hero-name">Matt Bledsoe</h1>
         <button class="sign-up">SIGN UP TODAY</button>
