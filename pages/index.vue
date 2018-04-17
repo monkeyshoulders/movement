@@ -4,18 +4,16 @@
       <img class="hero-img" src="../assets/profile.png" alt="">
       <div class="hero-text">
         <h1 class="hero-name">Matt Bledsoe</h1>
-        <button class="sign-up" type="button" name="button">SIGN UP TODAY</button>
+        <button class="sign-up">SIGN UP TODAY</button>
       </div>
     </section>
     <section class="video-tips">
       <img class="video" src="../assets/video-image.jpg" alt="">
+      <img class="play-button" src="../assets/play-button.svg" alt="">
+      <h4 class="play-text"><b>PLAY VIDEO</b></h4>
       <div class="tips">
-      <p>12 Handy Tips For <br>
-                      Generating Leads Through <br>
-                      Cold Calling
-      </p>
-      <button type="button" name="button"></button>
-
+      <p>12 Handy Tips For<br>Generating Leads Through <br>Cold Calling</p>
+      <div></div>
       </div>
     </section>
   </div>
@@ -92,6 +90,28 @@
     margin: 0;
     padding: 0;
     left: 0;
+    position: relative;
+  }
+
+  .play-button {
+    z-index: 2;
+    position: absolute;
+    margin-left: 280px;
+    align-self: center;
+    height: 80px;
+    width: auto;
+  }
+
+  .play-text {
+    z-index: 2;
+    position: absolute;
+    margin-left: 275px;
+    margin-top: 60px;
+    align-self: center;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+
   }
 
   .tips {
@@ -100,7 +120,7 @@
     font-size: 1.7em;
   }
 
-  .tips button {
+  .tips div {
     margin-top: 13px;
     width: 40px;
     height: 10px;
