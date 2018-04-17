@@ -16,11 +16,26 @@
       <div></div>
       </div>
     </section>
+    <section class="about-facts-map">
+      <div class="about">
+
+      </div>
+      <div class="facts">
+
+      </div>
+      <div class="map">
+
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
-
+  // export default {
+  //   asyncData(context) {
+  //     return context.app.$storyapi.get('/v1/spaces/:43984/assets')
+  //   }
+  // }
 </script>
 
 <style>
@@ -34,13 +49,12 @@
 */
   .container {
 
-
   }
 
   .hero {
     background: url('../assets/header-image.jpg');
     background-size: 100% 100%;
-    height: 38em;
+    height: 40em;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -125,5 +139,11 @@
     width: 40px;
     height: 10px;
     background-color: black;
+  }
+
+  .about-facts-map {
+    height: 50em;
+    background-color: #eaebed;
+    display: grid;
   }
 </style>
