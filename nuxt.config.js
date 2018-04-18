@@ -44,9 +44,9 @@ module.exports = {
         })
       }
     },
-    vendor: ["vue2-google-maps"]
-  },
-  plugins: [
-    {src: '~/plugins/vue2-google-maps.js'}
-  ]
+  //   vendor: ["vue2-google-maps"]
+  // },
+  // plugins: [
+  //   {src: '~/plugins/vue2-google-maps.js'}
+  // ]
 }

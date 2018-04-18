@@ -13,7 +13,6 @@
 
 <style scoped>
 
-
 .main-nav {
   position: absolute;
   top: 0;
