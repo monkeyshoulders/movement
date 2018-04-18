@@ -1,43 +1,45 @@
 <template>
-  <div class="container">
-    <section class="hero">
-      <div class="hero-img">
-        <img class="profile" src="../assets/profile.png" alt="">
-      </div>
-      <div class="hero-text">
-        <h1 class="name">Matt Bledsoe</h1>
-        <button class="sign-up">SIGN UP TODAY</button>
-      </div>
-    </section>
-    <section class="video-tips">
-      <img class="video" src="../assets/video-image.jpg" alt="">
+<div class="container">
+  <section class="hero">
+    <img class="profile" src="../assets/profile.png" alt="">
+    <h1 class="name">Matt Bledsoe</h1>
+    <button class="sign-up">SIGN UP TODAY</button>
+  </section>
+  <section class="video-tips">
+    <div class="video">
       <img class="play-button" src="../assets/play-button.svg" alt="">
       <h4 class="play-text"><b>PLAY VIDEO</b></h4>
-      <div class="tips">
+    </div>
+    <div class="tips">
       <p>12 Handy Tips For<br>Generating Leads Through <br>Cold Calling</p>
-      <div></div>
-      </div>
-    </section>
-    <section class="about-facts-map">
-      <div class="about">
+      <div class="line"></div>
+    </div>
+  </section>
+  <section class="about-facts-map">
+    <div class="about">
+      <h1 class="about-me">About Me</h1>
+      <h1 class="things">A few things to know</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ullamcorper dui, in mattis libero. Curabitur eu diam augue. Maecenas blandit elementum vulputate. Etiam sollicitudin urna vel est tempus condimentum.
+      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ullamcorper dui, in mattis libero. Curabitur eu diam augue.
+      </p>
+    </div>
+    <div class="facts">
 
-      </div>
-      <div class="facts">
+    </div>
+    <div class="map">
 
-      </div>
-      <div class="map">
-
-      </div>
-    </section>
-  </div>
+    </div>
+  </section>
+</div>
 </template>
 
 <script>
-  // export default {
-  //   asyncData(context) {
-  //     return context.app.$storyapi.get('/v1/spaces/:43984/assets')
-  //   }
-  // }
+// export default {
+//   asyncData(context) {
+//     return context.app.$storyapi.get('/v1/spaces/:43984/assets')
+//   }
+// }
 </script>
 
 <style>
@@ -49,103 +51,138 @@
     - Secondary: #092033,
     - Secondary Hover: #343E45
 */
-  .container {
 
-  }
+.container {}
 
-  .hero {
-    background: url('../assets/header-image.jpg');
-    background-size: 100% 100%;
-    height: 40em;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.hero {
+  background: url('../assets/header-image.jpg');
+  background-size: 100% 100%;
+  height: 40em;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 3, 1fr;
+  padding: 60px 0 90px 0;
+}
 
-  .profile {
-    width: 180px;
-    height: auto;
-  }
+.profile {
+  width: 180px;
+  height: auto;
+  margin: 0 auto;
+  align-self: flex-end;
+}
 
-  .hero-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.name {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.7em;
+  margin: 0 auto;
+  align-self: center;
+}
 
-  }
+.sign-up {
+  background-color: #00DFD4;
+  color: white;
+  padding: 10px 5px;
+  font-family: 'Open-Sans', sans-serif;
+  font-weight: 400;
+  width: 120px;
+  height: 40px;
+  margin: 0 auto;
+  align-self: flex-start;
+}
 
-  .name {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.7em;
-  }
+.sign-up:hover {
+  background-color: #009E97;
+}
 
-  .sign-up {
-    background-color: #00DFD4;
-    color: white;
-    padding: 10px;
-    font-family: 'Open-Sans', sans-serif;
-    font-weight: 400;
-  }
+.video-tips {
+  height: 310px;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid #acacac;
+}
 
-  .sign-up:hover {
-    background-color: #009E97;
-  }
+.video {
+  background: url('../assets/video-image.jpg') no-repeat;
+  background-size: contain;
+  display: grid;
+  justify-content: center;
+}
 
-  .video-tips {
-    width: 100%;
-    height: 310px;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
+.play-button {
+  align-self: flex-end;
+  height: 80px;
+  width: auto;
+}
 
-  .video {
-    width: auto;
-    height: 310px;
-    margin: 0;
-    padding: 0;
-    left: 0;
-    position: relative;
-  }
+.play-text {
+  align-self: flex-start;
+  padding-top: 10px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
 
-  .play-button {
-    z-index: 2;
-    position: absolute;
-    margin-left: 280px;
-    align-self: center;
-    height: 80px;
-    width: auto;
-  }
+.tips {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.7em;
+  display: grid;
+  align-content: center;
+}
 
-  .play-text {
-    z-index: 2;
-    position: absolute;
-    margin-left: 275px;
-    margin-top: 60px;
-    align-self: center;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+.tips p {
+  margin-left: 3em;
+}
 
-  }
+.tips div {
+  margin: 1em 0 0 3em;
+  width: 45px;
+  height: 8px;
+  background-color: black;
+}
 
-  .tips {
-    margin: 100px 0 0 100px;
-    font-family: 'Playfair Display', serif;
-    font-size: 1.7em;
-  }
+.about-facts-map {
+  height: 50em;
+  background-color: #eaebed;
+  display: grid;
+}
 
-  .tips div {
-    margin-top: 13px;
-    width: 40px;
-    height: 10px;
-    background-color: black;
-  }
+.about {
+  width: 18em;
+  height: auto;
+  padding: 30px 30px 0px 30px;
+  background: #ffffff;
+  margin: 3em;
+  border-top: 5px solid #092033;
+  font-family: 'Open Sans', sans-serif;
 
-  .about-facts-map {
-    height: 50em;
-    background-color: #eaebed;
-    display: grid;
-  }
+}
+
+.about-me {
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.things {
+  color: #092033;
+  font-weight: 800;
+  font-size: 1.1em;
+  padding: 1em 0;
+}
+
+.about p {
+  color: #aaaaaa;
+  line-height: 1.7em;
+  font-size: 15px;
+  padding-top: 12px;
+}
+
+.about p:nth-child(even) {
+  padding-top: 25px;
+}
+
+
 </style>
