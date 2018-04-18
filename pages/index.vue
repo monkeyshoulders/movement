@@ -16,15 +16,32 @@
     </div>
   </section>
   <section class="about-facts-map">
-    <div class="about">
-      <h1 class="about-me">About Me</h1>
-      <h1 class="things">A few things to know</h1>
+    <div class="card about">
+      <h1 class="card-title">About Me</h1>
+      <h1 class="card-desc">A few things to know</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ullamcorper dui, in mattis libero. Curabitur eu diam augue. Maecenas blandit elementum vulputate. Etiam sollicitudin urna vel est tempus condimentum.
       </p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ullamcorper dui, in mattis libero. Curabitur eu diam augue.
       </p>
     </div>
-    <div class="facts">
+    <div class="card facts">
+      <h1 class="card-title">Facts</h1>
+      <h1 class="card-desc">What makes us so good</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at ullamcorper dui, in mattis libero. Curabitur eu diam augue.</p>
+      <div class="list">
+        <div class="first-line">
+          <img class="chatbox" src="../assets/facts-chatbox.svg" alt="">
+          <h5>Lorem ipsum dolor sit amet vel est</h5>
+        </div>
+        <div class="second-line">
+          <img class="notes" src="../assets/facts-notes.svg" alt="">
+          <h5>Lorem ipsum vel est tempus urna</h5>
+        </div>
+        <div class="third-line">
+          <img class="chatbox2" src="../assets/facts-chatbox.svg" alt="">
+          <h5>Lorem ipsum dolor sit amet vel est</h5>
+        </div>
+      </div>
 
     </div>
     <div class="map">
@@ -146,34 +163,37 @@
   height: 50em;
   background-color: #eaebed;
   display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.about {
-  width: 18em;
+.card {
   height: auto;
   padding: 30px 30px 0px 30px;
   background: #ffffff;
   margin: 3em;
   border-top: 5px solid #092033;
   font-family: 'Open Sans', sans-serif;
-
 }
 
-.about-me {
+.about {
+  width: 18em;
+}
+
+.card-title {
   text-transform: uppercase;
   color: #aaaaaa;
   font-weight: 400;
   font-size: 14px;
 }
 
-.things {
+.card-desc {
   color: #092033;
   font-weight: 800;
   font-size: 1.1em;
   padding: 1em 0;
 }
 
-.about p {
+.about-facts-map p {
   color: #aaaaaa;
   line-height: 1.7em;
   font-size: 15px;
@@ -184,5 +204,35 @@
   padding-top: 25px;
 }
 
+.facts {
+  width: 36em;
+}
+
+.list {
+  margin-top: 2em;
+}
+
+.list h5 {
+  color: #707070;
+}
+
+.first-line, .second-line, .third-line {
+  display: flex;
+  align-items: center;
+
+}
+
+.first-line img {
+  height: 7em;
+  width: auto;
+}
+
+.second-line {
+  margin-top: 1em;
+}
+
+.third-line h5, .second-line h5 {
+  padding-left: 5em;
+}
 
 </style>

@@ -14,10 +14,9 @@ module.exports = {
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Playfair+Display:900' }
     ],
     script: [
-      { src: 'https://use.fontawesome.com/d6427b275f.js' }
+      { src: 'https://use.fontawesome.com/releases/v5.0.10/js/all.js', integrity: 'sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+', crossorigin: 'anonymous'}
     ]
   },
-
   modules: [
     ['storyblok-nuxt', {
       accessToken: 'Z4ziIxTA9MkYUY0a3tneDQtt',
