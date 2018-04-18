@@ -16,6 +16,7 @@
     </div>
   </section>
   <section class="about-facts-map">
+    <!-- <div class="afm-container"> -->
     <div class="card about">
       <h1 class="card-title">About Me</h1>
       <h1 class="card-desc">A few things to know</h1>
@@ -42,11 +43,31 @@
           <h5>Lorem ipsum dolor sit amet vel est</h5>
         </div>
       </div>
+    </div>
+    <div class="card map">
+      <div class="location">
+        <h1 class="card-title">Location</h1>
+        <h1 class="card-desc">We welcome you</h1>
+        <address class="address">
+          8024 Calvin Hall Rd <br>
+          Indian Land, SC 28277 <br>
+          <br>
+          Hours: 8:00AM - 5:00PM
+        </address>
+        <button type="button" name="directions">GET DIRECTIONS</button>
+      </div>
+      <div id="map">
+        <!-- <iframe width="600" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?key=AIzaSyBCfKSxLTGlrRMM9byxWqgft39GzwBNElw&&center=34.998891,-80.871246&zoom=18&maptype=roadmap" allowfullscreen>
+        </iframe> -->
+        <GmapMap
+          :center="{lat:34.998891, lng:-80.871246}"
+          :zoom="7"
+          map-type-id="roadmap">
+        </GmapMap>
+      </div>
 
     </div>
-    <div class="map">
-
-    </div>
+    <!-- </div> -->
   </section>
 </div>
 </template>
@@ -160,23 +181,26 @@
 }
 
 .about-facts-map {
-  height: 50em;
+  height: auto;
   background-color: #eaebed;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
 }
+
+.afm-container {}
 
 .card {
   height: auto;
-  padding: 30px 30px 0px 30px;
+  padding: 30px 30px 40px 30px;
   background: #ffffff;
-  margin: 3em;
   border-top: 5px solid #092033;
   font-family: 'Open Sans', sans-serif;
 }
 
 .about {
-  width: 18em;
+  grid-column: 1;
+  margin: 4em 0 0 9em;
 }
 
 .card-title {
@@ -196,7 +220,7 @@
 .about-facts-map p {
   color: #aaaaaa;
   line-height: 1.7em;
-  font-size: 15px;
+  font-size: 14px;
   padding-top: 12px;
 }
 
@@ -205,21 +229,24 @@
 }
 
 .facts {
-  width: 36em;
+  grid-column: 2 / span 2;
+  margin: 4em 9em 0 0;
+  padding-right: 8em;
 }
 
 .list {
-  margin-top: 2em;
+  margin-top: 1.2em;
 }
 
 .list h5 {
   color: #707070;
 }
 
-.first-line, .second-line, .third-line {
+.first-line,
+.second-line,
+.third-line {
   display: flex;
   align-items: center;
-
 }
 
 .first-line img {
@@ -228,11 +255,36 @@
 }
 
 .second-line {
-  margin-top: 1em;
+  margin-top: 5px;
 }
 
-.third-line h5, .second-line h5 {
+.third-line h5,
+.second-line h5 {
   padding-left: 5em;
 }
 
+.map {
+  grid-column: 1 / span 3;
+  margin: 0 9em 4em 9em;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+address {
+  font-style: normal;
+  color: #aaaaaa;
+  font-size: 14px;
+  margin-top: 4em;
+}
+
+.map button {
+  margin-top: 3em;
+  background-color: black;
+  color: white;
+  width: 15em;
+  padding: 12px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+}
 </style>

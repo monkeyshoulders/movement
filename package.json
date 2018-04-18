@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "nuxt": "^1.0.0",
-    "storyblok-nuxt": "0.0.3"
+    "storyblok-nuxt": "0.0.3",
+    "vue2-google-maps": "^0.9.2"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
