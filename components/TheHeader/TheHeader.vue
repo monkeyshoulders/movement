@@ -1,40 +1,49 @@
 
 <template>
-  <header class="main-header">
     <nav class="main-nav">
-      <nuxt-link to="/">
-        <a><img class="logo" src="../../assets/logo.png" alt=""></a>
-      </nuxt-link>
-      <!-- <nuxt-link to="/"><i class="icon fa fa-bars"></i></nuxt-link> -->
+      <div class="logo-container">
+        <img class="logo" src="../../assets/logo.png" alt="">
+      </div>
+      <div class="hamburger-container">
+        <i class="icon fa fa-bars"></i>
+      </div>
     </nav>
-  </header>
 </template>
 
 
 <style scoped>
 
-.main-header {
+
+.main-nav {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 70px;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.main-nav {
+.logo-container {
   display: flex;
 }
 
 .logo {
   width: 50px;
-  height: auto;
-  margin: 30px 0 20px 30px;
+  height: 50px;
+  align-self: flex-end;
+  margin-left: 30px;
+
+}
+
+.hamburger-container {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .icon {
-  justify-content: flex-end;
-  align-items: center;
-  font-size: 2em;
+  align-self: center;
+  font-size: 2.5em;
+  margin-right: 28px;
 }
 </style>

@@ -1,11 +1,11 @@
 <template>
   <div class="container">
     <section class="hero">
-      <div class="hero-img-cont">
-        <img class="hero-img" src="../assets/profile.png" alt="">
+      <div class="hero-img">
+        <img class="profile" src="../assets/profile.png" alt="">
       </div>
       <div class="hero-text">
-        <h1 class="hero-name">Matt Bledsoe</h1>
+        <h1 class="name">Matt Bledsoe</h1>
         <button class="sign-up">SIGN UP TODAY</button>
       </div>
     </section>
@@ -63,7 +63,7 @@
     align-items: center;
   }
 
-  .hero-img {
+  .profile {
     width: 180px;
     height: auto;
   }
@@ -75,7 +75,7 @@
 
   }
 
-  .hero-name {
+  .name {
     font-family: 'Playfair Display', serif;
     font-size: 2.7em;
   }
