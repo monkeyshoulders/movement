@@ -56,7 +56,6 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2em;
 }
-
 .card {
   height: auto;
   padding: 30px 30px 40px 30px;
@@ -64,86 +63,71 @@
   border-top: 5px solid #092033;
   font-family: 'Open Sans', sans-serif;
 }
-
 .about {
   grid-column: 1;
   margin: 4em 0 0 9em;
 }
-
 .card-title {
   text-transform: uppercase;
   color: #aaaaaa;
   font-weight: 400;
   font-size: 14px;
 }
-
 .card-desc {
   color: #092033;
   font-weight: 800;
   font-size: 1.1em;
   padding: 1em 0;
 }
-
 .about-facts-map p {
   color: #aaaaaa;
   line-height: 1.7em;
   font-size: 14px;
   padding-top: 12px;
 }
-
 .about p:nth-child(even) {
   padding-top: 25px;
 }
-
 .facts {
   grid-column: 2 / span 2;
   margin: 4em 9em 0 0;
   padding-right: 8em;
 }
-
 .list {
   margin-top: 1.2em;
 }
-
 .list h5 {
   color: #707070;
 }
-
 .first-line,
 .second-line,
 .third-line {
   display: flex;
   align-items: center;
 }
-
 .first-line img {
   height: 7em;
   width: auto;
 }
-
 .second-line {
   margin-top: 5px;
 }
-
 .third-line h5,
 .second-line h5 {
   padding-left: 5em;
 }
-
 .map {
   grid-column: 1 / span 3;
   margin: 0 9em 4em 9em;
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
-
 address {
   font-style: normal;
   color: #aaaaaa;
   font-size: 14px;
   margin-top: 4em;
 }
-
 .map button {
   margin-top: 3em;
   background-color: black;
