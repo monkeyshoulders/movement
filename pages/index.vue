@@ -15,10 +15,10 @@
 
   export default {
     components: {
-      'TheHero': TheHero,
-      'TheVideo': TheVideo,
-      'TheAbout': TheAbout,
-      'TheEmail': TheEmail
+      TheHero,
+      TheVideo,
+      TheAbout,
+      TheEmail
     }
   }
 // export default {

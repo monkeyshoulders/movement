@@ -2,7 +2,7 @@
 <template>
     <nav class="main-nav">
       <div class="logo-container">
-        <img class="logo" src="../../assets/logo.png" alt="">
+        <img class="logo" src="../assets/logo.png" alt="">
       </div>
       <div class="hamburger-container">
         <i class="icon fa fa-bars"></i>

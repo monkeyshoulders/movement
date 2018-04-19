@@ -2,7 +2,7 @@
   <section class="footer">
     <div class="foot-container">
       <div class="foot-icon">
-        <img src="../../assets/footer-logo.svg" alt="">
+        <img src="../assets/footer-logo.svg" alt="">
       </div>
       <div class="foot-sign-up">
         <h4>Sign up</h4>
