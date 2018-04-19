@@ -1,10 +1,10 @@
 <template>
-<div class="container">
-  <TheHero></TheHero>
-  <TheVideo></TheVideo>
-  <TheAbout></TheAbout>
-  <TheEmail></TheEmail>
-</div>
+  <div class="container">
+    <TheHero></TheHero>
+    <TheVideo></TheVideo>
+    <TheAbout></TheAbout>
+    <TheEmail></TheEmail>
+  </div>
 </template>
 
 <script>
